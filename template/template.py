@@ -5,7 +5,8 @@ data = []
 
 with open(path) as f:
     for line in f:
-        data.append(line.strip())
+        line = line.strip()
+        data.append(line)
 
 for line in data:
     print(line)

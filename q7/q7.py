@@ -41,7 +41,6 @@ for line in data:
 
         val = int(line.split(" ")[0])
         temp = level.split("/")
-        print(temp)
         if temp[0] != "":
             temp.insert(0, "")
 
@@ -53,6 +52,7 @@ for line in data:
 
             directory[dir] += val
 
+# Part A
 total = 0
 
 for d in directory:
@@ -63,6 +63,7 @@ for d in directory:
     
 print(total)
 
+# Part B
 total = 70000000
 need = 30000000
 used = directory[""]

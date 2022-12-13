@@ -17,6 +17,7 @@ with open(path) as f:
         
         data[index].append(json.loads(line))
 
+# Part A
 def is_valid(left, right):
     if type(left) == int and type(right) == int:
         if left < right:
@@ -62,6 +63,7 @@ for i, pair in enumerate(data):
 
 print(correct)
 
+# Part B
 lines = [[[2]], [[6]]]
 
 for pair in data:
